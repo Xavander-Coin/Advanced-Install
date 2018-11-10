@@ -62,41 +62,41 @@ git clone https://github.com/CryptoCashBack-Hub/Advanced-Install.git && cd vps
 Install & configure your desired master node with options:
 
 ```bash
-./install.sh -p ccbc
+./install.sh -p xczm
 ```
 
 ## Examples for typical script invocation
 
 These are only a couple of examples for typical setups. Check my [easy step-by-step guide for [vultr](/docs/masternode_vps.md) that will guide you through the hardest parts.
 
-**Install & configure 4 CCBC masternodes:**
+**Install & configure 4 XCZM masternodes:**
 
 ```bash
-./install.sh -p ccbc -c 4
+./install.sh -p xczm -c 4
 ```
 
-**Update daemon of previously installed CCBC masternodes:**
+**Update daemon of previously installed XCZM masternodes:**
 
 ```bash
-./install.sh -p ccbc -u
+./install.sh -p xczm -u
 ```
 
-**Install 6 CCBC masternodes with the git release tag "tags/v1.0.0.4"**
+**Install 6 XCZM masternodes with the git release tag "tags/v1.0.0.1"**
 
 ```bash
-./install.sh -p ccbc -c 6 -r "tags/v1.0.0.4"
+./install.sh -p xczm -c 6 -r "tags/v1.0.0.1"
 ```
 
-**Wipe all CCBC masternode data:**
+**Wipe all XCZM masternode data:**
 
 ```bash
-./install.sh -p ccbc -w
+./install.sh -p xczm -w
 ```
 
-**Install 2 CCBC masternodes and configure sentinel monitoring:**
+**Install 2 XCZM masternodes and configure sentinel monitoring:**
 
 ```bash
-./install.sh -p ccbc -c 2 -s
+./install.sh -p xczm -c 2 -s
 ```
 
 ## Options
@@ -105,9 +105,9 @@ The _install.sh_ script support the following parameters:
 
 | Long Option  | Short Option | Values              | description                                                         |
 | :----------- | :----------- | ------------------- | ------------------------------------------------------------------- |
-| --project    | -p           | project, e.g. "ccbc"| shortname for the project                                           |
+| --project    | -p           | project, e.g. "xczm"| shortname for the project                                           |
 | --net        | -n           | "4" / "6"           | ip type for masternode. (ipv)6 is default                           |
-| --release    | -r           | e.g. "tags/v1.0.0.2"| a specific git tag/branch, defaults to latest tested                |
+| --release    | -r           | e.g. "tags/v1.0.0.1"| a specific git tag/branch, defaults to latest tested                |
 | --count      | -c           | number              | amount of masternodes to be configured                              |
 | --update     | -u           | --                  | update specified masternode daemon, combine with -p flag            |
 | --sentinel   | -s           | --                  | install and configure sentinel for node monitoring                  |
@@ -175,12 +175,12 @@ The management script release will follow within the next couple of days.
 
 | command                               | description                                  |
 | :------------------------------------ | -------------------------------------------- |
-| nodemaster start ccbc (all\|number)   | start all or a specific pivx masternode(s)   |
-| nodemaster restart ccbc (all\|number) | stop all or a specific pivx masternode(s)    |
-| nodemaster stop ccbc (all\|number)    | restart all or a specific pivx masternode(s) |
-| nodemaster cleanup ccbc (all\|number) | delete chain data for all pivx masternodes   |
-| nodemaster status ccbc (all\|number)  | systemd process status for a pivx masternode |
-| nodemaster tail ccbc (all\|number)    | tail debug logs for a pivx masternode        |
+| nodemaster start xczm (all\|number)   | start all or a specific pivx masternode(s)   |
+| nodemaster restart xczm (all\|number) | stop all or a specific pivx masternode(s)    |
+| nodemaster stop xczm (all\|number)    | restart all or a specific pivx masternode(s) |
+| nodemaster cleanup xczm (all\|number) | delete chain data for all pivx masternodes   |
+| nodemaster status xczm (all\|number)  | systemd process status for a pivx masternode |
+| nodemaster tail xczm (all\|number)    | tail debug logs for a pivx masternode        |
 
 # Todo
 
